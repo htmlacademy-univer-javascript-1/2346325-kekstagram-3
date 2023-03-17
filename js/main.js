@@ -11,16 +11,17 @@ function isLengthCorrect(str, maxLength) {
 
 function generateData() {
   const photos = new Array();
-    for (let i = 1; i <= 25; i++) {
-      const photo = {
-        id: i,
-        url: `photos/${i}.jpg`,
-        description: `Photo number ${i}`,
-        likes: generateRandomNumber(15, 200),
-        comments: generateRandomNumber(0, 200),
-        }
-      photos.push(photo);
+
+  for (let i = 1; i <= 25; i++) {
+    photos.push({
+      id: i,
+      url: `photos/${i}.jpg`,
+      description: `Photo number ${i}`,
+      likes: generateRandomNumber(15, 200),
+      comments: generateRandomNumber(0, 200),
+    });
   }
+
   return photos;
 }
 
