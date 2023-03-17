@@ -26,4 +26,4 @@ function generateData() {
 }
 
 generateData();
-isLengthCorrect("aaa", 5);
+isLengthCorrect('aaa', 5);
