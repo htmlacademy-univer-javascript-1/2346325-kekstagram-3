@@ -1,6 +1,6 @@
 function generateRandomNumber(min, max) {
     if (min > max) {
-        throw new Error("Min value can't be more max value");
+        throw new Error('Min value cant be more max value');
     }
     return Math.round(Math.random() * (max - min) + min);
 }
@@ -11,9 +11,7 @@ function isLengthCorrect(str, maxLength) {
 
 function generateData() {
     const photos = new Array();
-
     for (let i = 1; i <= 25; i++) {
-
         const photo = {
             id: i,
             url: `photos/${i}.jpg`,
@@ -24,6 +22,8 @@ function generateData() {
 
         photos.push(photo);
     }
-
     return photos;
 }
+
+generateData();
+isLengthCorrect("aaa", 5);
