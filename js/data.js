@@ -4,7 +4,7 @@ function generateData() {
   const photos = new Array();
 
   for (let i = 1; i <= 25; i++) {
-	  photos.push({
+    photos.push({
       id: i,
       url: `photos/${i}.jpg`,
       description: `Photo number ${i}`,
