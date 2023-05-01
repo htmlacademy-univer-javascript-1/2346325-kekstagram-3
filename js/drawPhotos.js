@@ -1,5 +1,4 @@
 import { getData } from './network.js';
-import { createErrorMessage } from './uploadForm.js';
 
 const imageTemplate = document.querySelector('#picture');
 const picturesList = document.querySelector('.pictures');
